@@ -71,6 +71,18 @@ php bin/console doctrine:migrations:migrate
 
 ```
 
+
+### Dummy Data with Fixtures
+You can load sample data into the database using Symfony's fixtures.
+
+File: src/DataFixtures/ProductFixtures.php
+
+```bash
+
+php bin/console doctrine:fixtures:load
+
+```
+
 ### 5. Start the Symfony Server
 
 ```bash
@@ -126,16 +138,7 @@ Response:
 }
 
 
-### Dummy Data with Fixtures
-You can load sample data into the database using Symfony's fixtures.
 
-File: src/DataFixtures/ProductFixtures.php
-
-```bash
-
-php bin/console doctrine:fixtures:load
-
-```
 
 
 ### Documentation for Developers
